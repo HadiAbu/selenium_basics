@@ -12,7 +12,8 @@ public class Xpath_example {
 		
 		uni.get("https://www.gmail.com/intl/en/mail/help/about.html");
 		String text = uni.findElement(By.xpath("html/body/div[3]/div[2]/div[1]/div[1]/ul/li[1]/div/div/div/div/div/h1")).getText();
-		System.out.println(text);
+		String text2 = uni.findElement(By.xpath("html/body/div[3]/div[2]/div[1]/div[1]/ul/li[1]/div/div/div/div/div/h1")).getAttribute("text");
+		System.out.println(text2);
 		
 		/*
 		 *    Xpath examples: 
@@ -23,6 +24,8 @@ public class Xpath_example {
 		 *    //div[@class='banner']/h1
 		 *    //div[@class='banner']/div[@class='banner']/h1
 		 * 
+		 * 	  cssSelector example: 
+		 * 		String textCss = uni.findElement(By.cssSelector("div[id='Monkey'] ul li:nth-child(3) a ")).getText();
 		 */
 	}
 
