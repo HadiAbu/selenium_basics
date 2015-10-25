@@ -10,7 +10,7 @@ public class Links_List {
 	public static void main(String []args)
 	{
 		HtmlUnitDriver driver = new HtmlUnitDriver();
-		driver.get("http://www.bbc.com");
+		driver.get("http://www.youtube.com");
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		
 		System.out.println("Total links " + links.size());
